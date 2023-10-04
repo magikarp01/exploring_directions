@@ -34,6 +34,7 @@ def plot_lines(data_dict, y_name, save_path=None, method_names=None, loc='upper 
     plt.ylabel(y_name)
     plt.grid(True)
     plt.legend(title='Method', loc=loc)
+    plt.title(save_path)
     if save_path:
         plt.savefig(save_path)
 
